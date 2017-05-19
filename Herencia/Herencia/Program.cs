@@ -19,6 +19,7 @@ namespace Herencia
             cli.RFC = "RFC1";
             Console.WriteLine("Usuario : " + cli.IdCliente + " "+cli.Nombes +" " + cli.Apellidos +", Colonia : " + cli.Colonia + ", Direccion : " + cli.Colonia + ", RFC : " + cli.RFC);
             Console.ReadKey();
+            //comment
         }
     }
 }
