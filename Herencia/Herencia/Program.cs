@@ -19,10 +19,19 @@ namespace Herencia
             cli.Direccion = "Direccion1";
             cli.RFC = "RFC1";
             StreamWriter sw = new StreamWriter(@"E:\TXT\log.txt",true);
-            sw.WriteLine("Usuario : " + cli.IdCliente + " " + cli.Nombes + " " + cli.Apellidos + ", Colonia : " + cli.Colonia + ", Direccion : " + cli.Colonia + ", RFC : " + cli.RFC);
-            sw.Close();
-            Console.WriteLine("Usuario : " + cli.IdCliente + " "+cli.Nombes +" " + cli.Apellidos +", Colonia : " + cli.Colonia + ", Direccion : " + cli.Colonia + ", RFC : " + cli.RFC);
-            Console.ReadKey();
+            String cadena = Console.ReadLine();
+            if (cadena == "1")
+            {
+                sw.WriteLine("Usuario : " + cli.IdCliente + " " + cli.Nombes + " " + cli.Apellidos + ", Colonia : " + cli.Colonia + ", Direccion : " + cli.Colonia + ", RFC : " + cli.RFC);
+                sw.Close();
+            }
+            else
+            {
+                Console.WriteLine("Usuario : " + cli.IdCliente + " " + cli.Nombes + " " + cli.Apellidos + ", Colonia : " + cli.Colonia + ", Direccion : " + cli.Colonia + ", RFC : " + cli.RFC);
+            }
+            
+            
+            
             //comment
         }
     }
